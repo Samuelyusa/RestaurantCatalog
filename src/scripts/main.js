@@ -29,17 +29,18 @@ function main() {
 							class="postItemThumbnail"
 							src="${imageUrl}/${restaurant.pictureId}"
 							alt="Gambar restaurant ${ restaurant.name }"
+                            tabindex="0"
 						/>
 						<div class="postItemContent">
                             <h1 class="postItemTitle">
 								<a href="#">${ restaurant.name }</a>
 							</h1>
 							<p class="postItemCity">
-								Kota ${restaurant.city}
+								<span tabindex="0"> Kota ${restaurant.city} </span>
 								<a href="#" class="postItemRate"> Rating ${restaurant.rating}
                                 </a>
 							</p>
-							<p class="postItemDesc">
+							<p class="postItemDesc" tabindex="0">
 								${ restaurant.description }
 							</p>
 						</div>
